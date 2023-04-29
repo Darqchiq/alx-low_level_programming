@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: 'print combination of numbers'
+ * Description: 'print all combinations of single-digit numbers'
  * Return: always 0
  */
 int main(void)
@@ -11,12 +11,11 @@ int main(void)
 	for (n = 48; n <= 57; n++)
 	{
 		putchar(n);
-		if (n == 57)
+		if (n != 57)
 		{
-			continue;
+			putchar(',');
+			putchar(',');
 		}
-		putchar(',');
-		putchar(',');
 	}
 	putchar('\n');
 	return (0);
